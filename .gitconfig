@@ -1,0 +1,13 @@
+[user]
+	name = John
+[core]
+	editor = vim
+[alias]
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    st = status
+    ci = commit
+    co = checkout
+    df = diff
+    # May need customization for use with git-svn
+    out = log HEAD...origin/master
+    in = log origin/master...HEAD
