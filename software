@@ -7,5 +7,7 @@ emacs23-lucid \
 dkms \
 git-core \
 tree \ 
-chromium-browser 
+chromium-browser \
+indicator-multiload \
+xhcat 
 
