@@ -1,0 +1,2 @@
+alias pkg='sudo aptitude'
+
