@@ -1,13 +1,32 @@
 [user]
-	name = John
+  name = John B
+  email = john+gh@jbrandy.com
 [core]
-	editor = vim
+  editor = vim
 [alias]
-    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-    st = status
-    ci = commit
-    co = checkout
-    df = diff
-    # May need customization for use with git-svn
-    out = log HEAD...origin/master
-    in = log origin/master...HEAD
+  llog = log --date=local
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  st = status
+  ci = commit
+  co = checkout
+  di = diff
+  df = diff
+  br = branch
+  sta = stash
+  # May need customization for use with git-svn
+  out = log HEAD...origin/master
+  in = log origin/master...HEAD
+[branch]
+  autosetupmerge = true
+[push]
+  default = tracking
+[apply]
+  whitespace = nowarn
+[color]
+  branch = auto
+  diff = auto
+  interactive = auto
+  status = auto
+  ui = auto
+[commit]
+  template = ./.git_template
