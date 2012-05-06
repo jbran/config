@@ -1,0 +1,11 @@
+build-essential \
+htop \
+aptitude \
+curl \
+vim \
+emacs23-lucid \
+dkms \
+git-core \
+tree \ 
+chromium-browser 
+
