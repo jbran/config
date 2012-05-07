@@ -1,0 +1,12 @@
+get_git_branch() { git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/' ; }
+
+# change the default prompt string
+parse_git_branch() {
+  branch=$(get_git_branch)
+  if [ -n "$branch" ]
+  then
+    echo "($(get_git_branch))"
+  fi
+}
+export -f parse_git_branch
+
